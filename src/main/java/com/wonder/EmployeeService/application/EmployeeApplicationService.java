@@ -14,7 +14,7 @@ public class EmployeeApplicationService {
     @Autowired
     IEmployeeRepository employeeRepository;
 
-    public List<EmployeeDto> findByIds(long[] employeeIds) {
+    public List<EmployeeDto> findByIds(long... employeeIds) {
         final List<Employee> employees = employeeRepository.findByIds(employeeIds);
         return employees.stream().map(e -> toDto(e)).collect(Collectors.toList());
     }
