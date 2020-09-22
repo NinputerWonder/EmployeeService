@@ -48,7 +48,7 @@ class EmployeeApplicationServiceTests {
 		assertEquals("Jerry Rat", employeeDto.name);
 		assertEquals(27, employeeDto.age);
 
-		verify(employeeRepository, times(1)).findByIds(any(long[].class));
+		verify(employeeRepository, times(1)).findByIds(any());
 	}
 
 }

@@ -3,17 +3,13 @@ package com.wonder.EmployeeService;
 import com.wonder.EmployeeService.application.EmployeeApplicationService;
 import com.wonder.EmployeeService.application.EmployeeController;
 import com.wonder.EmployeeService.application.EmployeeDto;
-import com.wonder.EmployeeService.domain.Employee;
-import io.restassured.RestAssured;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 
 import java.util.Arrays;
-import java.util.List;
 
-import static org.hamcrest.Matchers.equalTo;
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.*;
 
